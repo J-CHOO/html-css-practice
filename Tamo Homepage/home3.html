@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko"></html>
+<head></head>
+<body>
+    <style>
+        .blankPosition{
+                width:100%;
+                background: skyblue;
+                height: 300px;
+            }
+
+            .relativePosition{
+                width:100%;
+                background: gray;
+                height: 300px;
+            }
+
+            .relativePosition > div{
+                padding:50px;
+                background: green;
+                margin-top: 10px;
+            }
+            
+            .relativePosition > div:first-child{
+                position: relative;
+                top:-100px;
+            }
+
+            .absolutePosition{
+                width:100%;
+                background: red;
+                height: 300px;
+            }
+
+            .absolutePosition > div{
+                position: absolute;
+                right:0px;
+                bottom: 0px;
+                width:400px;
+                height:100px;
+                background: blue;
+            }
+
+            .fixedPosition{
+                width:100%;
+                background: yellowgreen;
+                height: 300px;
+            }
+
+            .fixedPosition > div{
+                position: fixed;
+                left:0px;
+                top: 0px;
+                width:400px;
+                height:100px;
+                background: blue;
+            }
+    </style>
+
+        <div class="blankPosition">
+            <div>blank</div>
+        </div>
+        <div class="relativePosition">
+            <div>relative</div>
+            <div>relative</div>
+        </div>
+        <div class="absolutePosition">
+            <div>absolute</div>
+        </div>
+        <div class="fixedPosition">
+            <div>fixed</div>
+</div>
+
+</body>
