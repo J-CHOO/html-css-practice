@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head></head>
+    <body>
+        <style>
+            div{
+                background: pink;
+                padding: 10px;
+                margin-left: 50px;
+            }
+            div > span:first-child{
+                background: red;
+                padding-top: 20px;
+            }
+            div > span:last-child{
+                background: red;
+                padding: 20px;
+            }
+            div > span{
+                background: greenyellow;
+                padding: 10px; /*나의 면적을 늘려줌*/
+                margin: 40px;/* 면적은 그대로, 거리를 서로 벌려준다*/
+
+            }
+            *{
+                border-collapse: collapse;
+                margin:0px;
+                padding:0px;
+                text-decoration: none;
+                color:black;
+                list-style:none;
+            }
+            table{
+                border-bottom: 1px solid black;
+                border-collapse: collapse;
+                
+            }
+            table > thead > tr > th{
+                border:1px solid gray;
+                height: 400px;
+            }
+            table > tbody > tr > td{
+                border:1px solid gray;
+                background: pink;
+            }
+
+            .blankPosition{
+                width:100%;
+                background: skyblue;
+            }
+
+            .relativePosition{
+                width:100%;
+                background: gray;
+            }
+
+            .relativePosition > div{
+                padding:50px;
+                background: green;
+            }
+
+            .absolutePosition{
+                width:100%;
+                background: red;
+            }
+
+            .fixedPosition{
+                width:100%;
+                background: yellowgreen;
+            }
+        </style>
+        <div>
+            <span>타모</span>
+            <span>디자인</span>
+            <span>입니다</span>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>성별</th>
+                    <th>나이</th>
+                    <th>키</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>추타모</td>
+                    <td>남성</td>
+                    <td>31</td>
+                    <td>183</td>
+                </tr>
+                <tr>
+                    <td>오타모</td>
+                    <td>여성</td>
+                    <td>24</td>
+                    <td>153</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="blankPosition">
+            <div>blank</div>
+        </div>
+        <div class="relativePosition">
+            <div>relative</div>
+            <div>relative</div>
+        </div>
+        <div class="absolutePosition">
+            <div>absolute</div>
+        </div>
+        <div class="fixedPosition">
+            <div>fixed</div>
+        </div>
+    </body>
+</html>
