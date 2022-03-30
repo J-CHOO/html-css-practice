@@ -1,0 +1,37 @@
+.color-primary {
+    background: yellow;
+    color: red;
+}
+.color-secondary {
+    color: blue;
+}
+
+.font-50 {
+    font-size: 50px;
+}
+
+.select_style {
+    height: 40px;
+    color: skyblue;
+    font-size: 20px;
+}
+
+.tb-head > tr > td {
+    border: 1px solid black;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.tb-body > tr > td {
+    border: 1px solid black;
+}
+
+/* p {
+    background: greenyellow;
+} */
+
+#id1 {
+    background: blueviolet;
+    color: brown;
+}
